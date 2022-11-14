@@ -36,13 +36,13 @@ const Testimonial = () => {
             <div className="flex justify-between">
             <div>
             <h5 className="text-primary font-bold">Testimonial</h5>
-            <h2 className='text-4xl'>What Our Patients Says</h2>
+            <h2 className='text-2xl md:text-4xl'>What Our Patients Says</h2>
             </div>
             <figure>
-                <img className="w-20 lg:w-48" src={quote} alt="" />
+                <img className="w-16 md:w-20 lg:w-48" src={quote} alt="" />
             </figure>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-20 my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:mx-20 my-16">
             {
                 reviews.map(rview => <ReviewTestimonial key={rview._id} rview={rview}></ReviewTestimonial>)
             }
